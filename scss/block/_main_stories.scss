@@ -1,7 +1,22 @@
 main {
   .main_stories {
+    position: relative;
     background: #004047;
     padding-top: 140px;
+
+
+    .stories-bg-left {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .stories-bg-right {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+
     .main_stories-container {
       .main_stories-title {
         max-width: 932px;

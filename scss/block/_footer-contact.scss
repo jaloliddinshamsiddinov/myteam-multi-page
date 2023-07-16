@@ -1,0 +1,131 @@
+footer {
+  .footer_contact-container {
+    background: #002529;
+
+    .footer_contact-list {
+      padding-top: 48px;
+      padding-bottom: 48px;
+      display: flex;
+
+      .footer_contact_item {
+        .footer_contact_item__icon {
+          text-align: end;
+          i {
+            margin-left: 18px;
+            font-size: 24px;
+            color: #fff;
+          }
+        }
+        .footer_contact-page {
+          display: flex;
+          justify-content: space-between;
+
+          a {
+            color: #fff;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 28px;
+          }
+        }
+
+        &:nth-child(2) {
+          margin-left: 125px;
+          max-width: 171px;
+
+          a {
+            color: #fff;
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 25px;
+          }
+        }
+
+        &:nth-child(3) {
+          margin-left: auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          p {
+            color: #fff;
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    .footer_contact-container {
+      .footer_contact-list {
+        flex-wrap: wrap;
+
+        .footer_contact_item {
+          margin-bottom: 33px;
+
+          &:nth-child(2) {
+            margin-left: auto;
+            
+            a {
+                width: 100%;
+            }
+          }
+
+          &:nth-child(3) {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+
+            .footer_contact_item__icon {
+              a {
+                &:nth-child(1) {
+                  transform: translateX(-10px);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    .footer_contact-container {
+      .footer_contact-list {
+        .footer_contact_item {
+          margin: auto;
+          margin-bottom: 24px;
+
+          &:nth-child(2) {
+            margin-left: auto;
+          }
+
+          &:nth-child(3) {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            .footer_contact_item__icon {
+                margin-bottom: 16px;
+                text-align: center;
+              a {
+                &:nth-child(1) {
+                  transform: translateX(-10px);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
