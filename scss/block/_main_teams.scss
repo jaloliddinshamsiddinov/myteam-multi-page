@@ -1,0 +1,119 @@
+main {
+  width: 100%;
+  height: auto;
+  background: #012f34;
+  padding-top: 100px;
+
+  .main_teams {
+    position: relative;
+
+    .main__bg_img {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+    .main_teams-container {
+      display: flex;
+      justify-content: space-between;
+
+      .main_teams-top_lengs {
+        width: 50px;
+        height: 4px;
+        background: #f67e7e;
+        margin-bottom: 32px;
+      }
+
+      .main_tams-title {
+        width: 445px;
+        color: #fff;
+        font-size: 48px;
+      }
+
+      .main_teams-boxs {
+        margin-bottom: 140px;
+        .main_teams-box {
+          display: flex;
+          align-items: center;
+          margin-bottom: 32px;
+
+          .main_team-box__about {
+            margin-left: 23px;
+
+            h3 {
+              margin-bottom: 16px;
+              color: #f67e7e;
+              font-size: 18px;
+              font-weight: 700;
+              line-height: 28px;
+            }
+
+            p {
+              max-width: 445px;
+              color: #fff;
+              font-size: 15px;
+              font-weight: 600;
+              line-height: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 882px) {
+  main {
+    .main_teams {
+      .main__bg_img {
+        position: absolute;
+        top: -100px;
+        right: 0;
+      }
+      .main_teams-container {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .main_team-about {
+          h2 {
+            width: 445px;
+            color: #fff;
+            font-family: Livvic;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px; /* 100% */
+            margin-bottom: 64px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 648px) {
+  main {
+    .main_teams {
+      .main_teams-container {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .main_team-about {
+          h2 {
+            width: 234px;
+            font-size: 32px;
+            line-height: 32px;
+            margin-bottom: 64px;
+          }
+        }
+
+        .main_teams-boxs {
+          .main_teams-box {
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

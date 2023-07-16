@@ -1,31 +1,125 @@
 header {
+  height: auto;
+  position: relative;
+
+  .header_left-img {
+    position: absolute;
+    top: 250px;
+    left: 0;
+  }
+
+  .header-bottom-img {
+    position: absolute;
+    bottom: 0;
+    right: 165px;
+  }
   .header_container {
     .header_hero {
-        // position: relative;
       display: flex;
-      align-items: center;
-
+      justify-content: space-between;
+      padding-bottom: 256px;
       .header_hero-title {
-        font-size: 100px;
-        color: #fff;
         width: 539px;
+        color: #fff;
+        font-size: 100px;
+        line-height: 100px;
+
+        span {
+          color: #f67e7e;
+        }
       }
 
-      .header_hero-description {
-        // position: relative;
+      .header_hero-about {
         width: 445px;
-        color: #fff;
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 28px;
+        height: 195px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
-        &::before {
-            content: "";
-            position: absolute;
-            top: -79px;
-            width: 50px;
-            height: 4px;
-            background-color: #fff;
+        .header_hero-icon {
+          width: 50px;
+          height: 4px;
+          background: #79c8c7;
+        }
+
+        .header_hero-text {
+          color: #fff;
+          width: 100%;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  header {
+    .header_left-img {
+      top: 600px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    .header_container {
+      .header_hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .header_hero-title {
+          width: 100%;
+          margin-bottom: 24px;
+          font-size: 64px;
+          line-height: 56px;
+        }
+
+        .header_hero-about {
+          .header_hero-icon {
+            display: none;
+          }
+
+          .header_hero-text {
+            width: 457px;
+            font-size: 15px;
+            line-height: 28px;
+          }
+        }
+      }
+    }
+
+    .header_left-img {
+      display: none;
+    }
+
+    .header-bottom-img {
+      right: 30%;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  img.header-bottom-img {
+    position: absolute;
+    bottom: 0;
+    right: 0 ;
+  }
+  header {
+    .header_container {
+      .header_hero {
+        .header_hero-title {
+          width: 100%;
+          font-size: 40px;
+        }
+
+        .header_hero-about {
+          width: 100%;
+          .header_hero-text {
+            width: 100%;
+          }
         }
       }
     }
