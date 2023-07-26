@@ -1,0 +1,98 @@
+header {
+  // width: 100vw;
+  .header_container {
+    .header_hero.about_header-hero {
+      justify-content: start;
+
+      .about_header-title {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 100px;
+      }
+
+      .header_hero-about {
+        margin-left: 100px;
+
+        .about_header-description {
+          width: 730px;
+          color: #fff;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+
+  .about__header-img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: 1010px) {
+  header
+    .header_container
+    .header_hero.about_header-hero
+    .header_hero-about
+    .about_header-description {
+    width: 530px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  header .header_container .header_hero.about_header-hero .header_hero-about {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header
+    .header_container
+    .header_hero.about_header-hero
+    .header_hero-about
+    .about_header-description {
+    width: 430px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  header .header_container .header_hero.about_header-hero .about_header-title {
+    font-size: 40px;
+  }
+  header
+    .header_container
+    .header_hero.about_header-hero
+    .header_hero-about
+    .about_header-description {
+    font-size: 15px;
+    width: 330px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .about_main .about_main_container .main-h2-title {
+    margin-top: 200px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  header .header_container .header_hero.about_header-hero .about_header-title {
+    font-size: 40px;
+  }
+  header
+    .header_container
+    .header_hero.about_header-hero
+    .header_hero-about
+    .about_header-description {
+    font-size: 12px;
+    width: 200px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

@@ -1,0 +1,88 @@
+.about_main {
+  background-color: #004047;
+  position: relative;
+
+  .meet_top-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .meet_bottom-img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .about_main_container {
+    .main-h2-title {
+      color: white;
+      margin-bottom: 64px;
+      text-align: center;
+    }
+
+    .meet_cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 76px 30px;
+      padding-bottom: 168px;
+
+      .meet_card {
+        padding-top: 32px;
+        text-align: center;
+        position: relative;
+        // width: 350px;
+        height: 253px;
+        border-radius: 5px;
+        flex-shrink: 0;
+        background: #012f34;
+
+        .meet_img {
+          width: 96px;
+          height: 96px;
+          border-radius: 50%;
+          outline: 2px solid white;
+          margin-bottom: 16px;
+        }
+        .meet_name {
+          color: #79c8c7;
+          text-align: center;
+          font-family: Livvic;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 28px; /* 155.556% */
+        }
+        .meet_description {
+          color: #fff;
+          text-align: center;
+          font-family: Livvic;
+          font-size: 15px;
+          font-style: italic;
+          font-weight: 500;
+          line-height: 25px; /* 166.667% */
+        }
+        .meet_plus {
+          width: 56px;
+          height: 56px;
+          flex-shrink: 0;
+          position: absolute;
+          bottom: -28px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about_main .about_main_container .meet_cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 576px) {
+    .about_main .about_main_container .meet_cards {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
